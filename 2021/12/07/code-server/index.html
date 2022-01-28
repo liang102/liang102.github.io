@@ -16,20 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="code-server简介 vscode 是一款轻量级但功能强大的源代码编辑器,适用于 Windows、macOS 和 Linux。 支持C++、C#、Java、Python、PHP、Go等等众多语言。 致力于在任何地方的任何机器上运行VS Code并在浏览器中访问它。 官方文档：code-server 软件包：code-server  服务器要求 1 GB 内存 2 个 CPU 内核 环境必须启">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://liang.ergua.cc/2022/01/20/hello-world/index.html">
+<meta property="og:title" content="云端IDE">
+<meta property="og:url" content="https://liang.ergua.cc/2021/12/07/code-server/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="code-server简介 vscode 是一款轻量级但功能强大的源代码编辑器,适用于 Windows、macOS 和 Linux。 支持C++、C#、Java、Python、PHP、Go等等众多语言。 致力于在任何地方的任何机器上运行VS Code并在浏览器中访问它。 官方文档：code-server 软件包：code-server  服务器要求 1 GB 内存 2 个 CPU 内核 环境必须启">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-01-20T09:11:10.647Z">
-<meta property="article:modified_time" content="2022-01-17T09:20:31.870Z">
+<meta property="article:published_time" content="2021-12-07T12:30:00.000Z">
+<meta property="article:modified_time" content="2022-01-28T08:44:51.372Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="部署">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>Hello World - Hexo</title>
+  <title>云端IDE - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -191,7 +192,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Hello World">
+            <span class="h2" id="subtitle" title="云端IDE">
               
             </span>
 
@@ -201,8 +202,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-01-20 17:11" pubdate>
-        2022年1月20日 下午
+      <time datetime="2021-12-07 20:30" pubdate>
+        2021年12月7日 晚上
       </time>
     </span>
   
@@ -212,7 +213,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      367 字
+      2.8k 字
     </span>
   
 
@@ -221,7 +222,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4 分钟
+      24 分钟
     </span>
   
 
@@ -250,28 +251,58 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">云端IDE</h1>
             
             <div class="markdown-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+              <h1 id="code-server简介"><a href="#code-server简介" class="headerlink" title="code-server简介"></a>code-server简介</h1><ul>
+<li>vscode 是一款轻量级但功能强大的源代码编辑器,适用于 Windows、macOS 和 Linux。</li>
+<li>支持C++、C#、Java、Python、PHP、Go等等众多语言。</li>
+<li>致力于在任何地方的任何机器上运行VS Code并在浏览器中访问它。</li>
+<li>官方文档：<a target="_blank" rel="noopener" href="https://coder.com/docs/code-server/latest">code-server</a></li>
+<li>软件包：<a target="_blank" rel="noopener" href="https://github.com/cdr/code-server/releases">code-server</a></li>
+</ul>
+<h2 id="服务器要求"><a href="#服务器要求" class="headerlink" title="服务器要求"></a>服务器要求</h2><ul>
+<li>1 GB 内存</li>
+<li>2 个 CPU 内核</li>
+<li>环境必须启用 WebSockets，因为代码服务器使用 WebSockets 在浏览器和服务器之间进行通信。</li>
+</ul>
+<h2 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h2><ul>
+<li>读取：3000 IOPS，50 MB/s</li>
+<li>写入：3000 IOPS 50 MB/s</li>
+</ul>
+<h2 id="部署云端code-server"><a href="#部署云端code-server" class="headerlink" title="部署云端code-server"></a>部署云端code-server</h2><h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ cat /etc/redhat-release <br>CentOS Linux release 7.6.1810 (Core)<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<h3 id="用户环境"><a href="#用户环境" class="headerlink" title="用户环境"></a>用户环境</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">]<span class="hljs-comment"># useradd code</span><br>]<span class="hljs-comment"># echo &quot;password&quot; | passwd --stdin code    #&quot;password&quot; 为code用户登录密码</span><br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+<h3 id="部署nginx环境"><a href="#部署nginx环境" class="headerlink" title="部署nginx环境"></a>部署nginx环境</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">## nginx repo 源</span><br>]<span class="hljs-comment"># vim /etc/yum.repos.d/nginx.repo </span><br>[nginx]<br>name=nginx repo<br>baseurl=http://nginx.org/packages/centos/7/<span class="hljs-variable">$basearch</span>/<br>gpgcheck=0<br>enabled=1<br>---------------------------------------------------------<br>]<span class="hljs-comment"># yum repolist</span><br><br><span class="hljs-comment">## 安装nginx </span><br>]<span class="hljs-comment"># yum -y install nginx</span><br><br><span class="hljs-comment">## 转发配置</span><br>]<span class="hljs-comment"># vim /etc/nginx/conf.d/default.conf</span><br><br>server &#123;<br>    listen        80;<br>    listen       443 ssl;<br>    server_name  domain;<br>    ssl_certificate cert/cert-file-name.pem;  <span class="hljs-comment">#需要将cert-file-name.pem替换成已上传的证书文件的名称。</span><br>    ssl_certificate_key cert/cert-file-name.key; <span class="hljs-comment">#需要将cert-file-name.key替换成已上传的证书私钥文件的名称。</span><br>    ssl_session_timeout 5m;<br>    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;<br>    <span class="hljs-comment">#表示使用的加密套件的类型。</span><br>    ssl_protocols TLSv1.1 TLSv1.2 TLSv1.3; <span class="hljs-comment">#表示使用的TLS协议的类型。</span><br>    ssl_prefer_server_ciphers on;<br><br>    <span class="hljs-keyword">if</span> ( <span class="hljs-variable">$server_port</span> = <span class="hljs-string">&quot;80&quot;</span> ) &#123;<br>      rewrite ^(/.*)$ https://$host<span class="hljs-variable">$1</span>  permanent;<br>    &#125;<br><br>    location / &#123;<br>    proxy_pass http://localhost:8080;<br>    proxy_set_header Host <span class="hljs-variable">$host</span>;<br>    proxy_set_header Upgrade <span class="hljs-variable">$http_upgrade</span>;  <span class="hljs-comment"># 设置websocket</span><br>    proxy_set_header Connection upgrade; <br>    proxy_set_header Accept-Encoding gzip;<br>    &#125;<br>&#125;<br><br><span class="hljs-comment">## 检查配置文件语法</span><br>]<span class="hljs-comment"># nginx -t</span><br>nginx: the configuration file /etc/nginx/nginx.conf syntax is ok<br>nginx: configuration file /etc/nginx/nginx.conf <span class="hljs-built_in">test</span> is successful<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
+<h3 id="开始部署code-server"><a href="#开始部署code-server" class="headerlink" title="开始部署code-server"></a>开始部署code-server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 切换普通用户</span><br>]<span class="hljs-comment"># su - code</span><br><br><span class="hljs-comment"># 下载软件包</span><br>]$ wget https://github.com/cdr/code-server/releases/download/v3.12.0/code-server-3.12.0-linux-amd64.tar.gz<br><br><span class="hljs-comment"># 解包</span><br>]$ tar xf code-server-3.12.0-linux-amd64.tar.gz &amp;&amp; mv code-server-3.12.0-linux-amd64  code-server &amp;&amp; <span class="hljs-built_in">cd</span> code-server/<br><br><span class="hljs-comment"># 编辑配置文件</span><br>]$ vim config.yaml<br>bind-addr: 127.0.0.1:8080<br>auth: password<br>password: [password]  <span class="hljs-comment"># 此处为code-server登录密码</span><br>cert: <span class="hljs-literal">false</span><br><br>]$ <span class="hljs-built_in">logout</span>    <span class="hljs-comment"># 退出普通用户环境</span><br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="配置code-server服务"><a href="#配置code-server服务" class="headerlink" title="配置code-server服务"></a>配置code-server服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs bash">]<span class="hljs-comment"># vim /usr/lib/systemd/system/code-server.service</span><br><br>[Unit]<br>Description=code-server<br>Documentation=https://docs.cloudreve.org<br>After=network.target<br>Wants=network.target<br><br>[Service]<br>ExecStart=/home/code/code-server/bin/code-server  --config=/home/code/code-server/config.yaml<br>Restart=on-abnormal<br>RestartSec=5s<br>KillMode=mixed<br><br>StandardOutput=null<br>StandardError=syslog<br><br>[Install]<br>WantedBy=multi-user.target<br><br>]<span class="hljs-comment"># systemctl daemon-reload  # 加载服务配置</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="添加sudo提权"><a href="#添加sudo提权" class="headerlink" title="添加sudo提权"></a>添加sudo提权</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">]<span class="hljs-comment"># vim /etc/sudoers</span><br>code    ALL=(ALL)  /bin/systemctl, /bin/netstat, /bin/ps, /usr/sbin/nginx<br></code></pre></td></tr></table></figure>
+
+<h3 id="切换普通用户起服务"><a href="#切换普通用户起服务" class="headerlink" title="切换普通用户起服务"></a>切换普通用户起服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">]<span class="hljs-comment"># su - code</span><br>]$ sudo systemctl start code-server<br>[sudo] password <span class="hljs-keyword">for</span> code:    <span class="hljs-comment"># 此处输入code 用户密码</span><br><br>]$ sudo systemctl <span class="hljs-built_in">enable</span> code-server<br>[sudo] password <span class="hljs-keyword">for</span> code:    <span class="hljs-comment"># 此处输入code 用户密码</span><br><br>]$ sudo nginx<br>[sudo] password <span class="hljs-keyword">for</span> code:    <span class="hljs-comment"># 此处输入code 用户密码</span><br></code></pre></td></tr></table></figure>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/linux/">linux</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%83%A8%E7%BD%B2/">部署</a>
+                    
+                  </div>
                 
               </div>
               
@@ -286,15 +317,15 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2022/01/20/hello-world/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2021/12/07/code-server/">
-                        <span class="hidden-mobile">云端IDE</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
