@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2022/01/29/nginx-reload%E5%8E%9F%E7%90%86/"/>
+    <url>/2022/01/29/nginx-reload%E5%8E%9F%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<h2 id="nginx-s-reload-原理"><a href="#nginx-s-reload-原理" class="headerlink" title="nginx -s reload  原理"></a>nginx -s reload  原理</h2><ul><li>执行这条命令的是希望nginx不停止服务的情况下把旧的nginx配置文件内容平滑的更新为新的配置文件内容。</li></ul><h3 id="nginx-s-reload-流程"><a href="#nginx-s-reload-流程" class="headerlink" title="nginx -s reload 流程"></a>nginx -s reload 流程</h3><ul><li>因为启动nginx服务有两种进程,一种是master 进程，一种是 worker 进程</li><li>worker 进程 是由nginx配置文件的worker_processes配置参数控制的，表示CPU核数<figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">[1] 向master 进程发送 HUP 信号 <br>[2] master 进程校验nginx配置文件语法是否正确<br>[3] master 进程打开新的监听端口<br>[4] master 进程用新的nginx配置启动新的 worker 子进程<br>[5] master 进程向老的 worker 子进程 发送 QUIT 信号<br>[6] 老的 worker 子进程关闭监听句柄，处理完当前连接后结束进程<br></code></pre></td></tr></table></figure></li></ul><h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><pre><code class=" mermaid">flowchart TDa([正在运行的nginx服务])a1[master进程\nWorker进程]b[修改nginx配置文件]c[尝试配置,尝试打开日志文件,尝试分配新的监听端口]d&#123;是否成功&#125;d1[回滚配置]d2[使用新的配置,新建一个Worker进程,新建成功后发送一个关闭消息给旧的Worker进程]e[旧的Worker进程 收到信号后会继续服务,当所有请求的客户端被服务后,旧进程关闭]f([结束])a --&gt;|启动| a1a --&gt;|update| b --&gt; c --&gt; dd --&gt;|否| d1 --&gt; f d --&gt;|是|d2 --&gt; e --&gt; f</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>nginx</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>nginx</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2022/01/28/hello-world/"/>
     <url>/2022/01/28/hello-world/</url>
