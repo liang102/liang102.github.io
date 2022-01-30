@@ -16,23 +16,23 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="Session与Cookie详解session 与 cookie 是什么？ session 与cookie 是属于一种会话控制技术，常用在身份识别，登录验证，数据传输等。 举个例子：就像我们去超市买东西结账的时候，我们要拿出我们的会员卡才会获取优惠.这时候，我们怎么识别这个会员卡真实有效的呢?当我们将会员号给到收银员，收银员根据我们提供的会员号，输入到系统中，系统根据这个会员号去查询，如果查询到了">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://liang.ergua.cc/2022/01/28/hello-world/index.html">
+<meta property="og:title" content="session与cookie详解">
+<meta property="og:url" content="https://liang.ergua.cc/2022/01/30/session%E4%B8%8Ecookie%E8%AF%A6%E8%A7%A3/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Session与Cookie详解session 与 cookie 是什么？ session 与cookie 是属于一种会话控制技术，常用在身份识别，登录验证，数据传输等。 举个例子：就像我们去超市买东西结账的时候，我们要拿出我们的会员卡才会获取优惠.这时候，我们怎么识别这个会员卡真实有效的呢?当我们将会员号给到收银员，收银员根据我们提供的会员号，输入到系统中，系统根据这个会员号去查询，如果查询到了">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://liang.ergua.cc/img/hello.jpg">
-<meta property="article:published_time" content="2022-01-28T09:07:02.080Z">
-<meta property="article:modified_time" content="2022-01-28T09:07:02.076Z">
+<meta property="og:image" content="https://liang.ergua.cc/img/nginx.jpg">
+<meta property="article:published_time" content="2022-01-30T01:51:09.000Z">
+<meta property="article:modified_time" content="2022-01-30T03:17:17.948Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="HTTP">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://liang.ergua.cc/img/hello.jpg">
+<meta name="twitter:image" content="https://liang.ergua.cc/img/nginx.jpg">
   
   
-  <title>Hello World - Hexo</title>
+  <title>session与cookie详解 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -194,7 +194,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Hello World">
+            <span class="h2" id="subtitle" title="session与cookie详解">
               
             </span>
 
@@ -204,8 +204,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-01-28 17:07" pubdate>
-        2022年1月28日 下午
+      <time datetime="2022-01-30 09:51" pubdate>
+        2022年1月30日 上午
       </time>
     </span>
   
@@ -215,7 +215,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      367 字
+      3.3k 字
     </span>
   
 
@@ -224,7 +224,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4 分钟
+      28 分钟
     </span>
   
 
@@ -253,22 +253,100 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">session与cookie详解</h1>
             
             <div class="markdown-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+              <h1 id="Session与Cookie详解"><a href="#Session与Cookie详解" class="headerlink" title="Session与Cookie详解"></a>Session与Cookie详解</h1><h2 id="session-与-cookie-是什么？"><a href="#session-与-cookie-是什么？" class="headerlink" title="session 与 cookie 是什么？"></a>session 与 cookie 是什么？</h2><ul>
+<li>session 与cookie 是属于一种会话控制技术，常用在身份识别，登录验证，数据传输等。</li>
+<li>举个例子：就像我们去超市买东西结账的时候，我们要拿出我们的会员卡才会获取优惠.这时候，我们怎么识别这个会员卡真实有效的呢?当我们将会员号给到收银员，收银员根据我们提供的会员号，输入到系统中，系统根据这个会员号去查询，如果查询到了就证明这个会员号是真实存在的.这里的会员号就好比cookie与session.会员系统就好比服务器端，收银员就好比客户端.</li>
+</ul>
+<h2 id="为什么会用到session与cookie？"><a href="#为什么会用到session与cookie？" class="headerlink" title="为什么会用到session与cookie？"></a>为什么会用到session与cookie？</h2><ul>
+<li>这里有必要了解一下http应用传输协议的特点了。由于http协议是无状态的，即浏览器去请求了一个网页，这时候就是一个http请求，当服务端接收到请求之后，返回客户端需要的数据，在这过程中浏览器与服务器是建立了一个连接的。但是当服务端返回数据，客户端收到数据之后，他们的这种连接关系就断开了。下次浏览器再去发送请求的时候，又是重新建立一个连接，这两个链接没有任何关系。试想一下，当我们登录一个商场系统的时候，进入首页做了登录操作，但是我们下单或者加入购物车的时候，还需要登录，每访问一个页面就要登录，是不是很繁琐同时也是很不科学的，万一我们加入购物车的商品，我们点击下单了，下单页面要登录而且还无法正确的反馈出你下单时的那些商品。</li>
+</ul>
+<h2 id="Http特点"><a href="#Http特点" class="headerlink" title="Http特点"></a>Http特点</h2><ul>
+<li>http协议支持客户端/服务端模式，也是一种请求/响应模式的协议。</li>
+<li>无连接。所谓的无连接就是服务器收到了客户端的请求之后，响应完成并收到客户端的应答之后，即断开连接。限制每次的连接只处理一次请求。从而节省传输时间。</li>
+<li>无状态。http协议对事务的处理没有记忆能力。也就意味着如果需要前面的信息，只能重传，这无形之中增加数据的传输量。这种方式某种方面上讲解放了服务器，但是却不利于客户端与服务器的连接。为了弥补这种不足，产生了两项记录http状态的技术，一个叫做Cookie,一个叫做Session</li>
+<li>简单快捷：所谓的简单快捷是指客户端向服务器请求服务时，一般来说只需要传输请求方法和路径，就能进行访问</li>
+<li>灵活：这里主要指的是客户端可以通过http协议传输任意类型的数据。比如传输.jpg文件、.ppt文件等等，只需要设定content-type就可以进行传输。</li>
+</ul>
+<h2 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h2><ul>
+<li>Session是指一个终端用户与交互系统进行通信的时间间隔，通常指从注册进入系统到注销退出系统之间所经过的时间。以及如果需要的话，可能还有一定的操作空间。</li>
+<li>一个Session的概念需要包括特定的客户端，特定的服务器端以及不中断的操作时间。A用户和C服务器建立连接时所处的Session同B用户和C服务器建立连接时所处的Session是两个不同的Session。</li>
+</ul>
+<h3 id="Session的工作原理"><a href="#Session的工作原理" class="headerlink" title="Session的工作原理"></a>Session的工作原理</h3><ul>
+<li>当一个session第一次被启用时，一个独一的标识被存储于本地的cookie中.</li>
+<li>首先使用session_start()函数，PHP从session仓库中加载已经存储的session变量。</li>
+<li>当执行PHP脚本时，通过使用session_register()函数注册session变量。</li>
+<li>当PHP脚本执行结束时，未被销毁的session变量会被自动保存在本地一定路径下的session库中，这个路径可以通过php.ini文件中的session.save_path指定，下次浏览网页时可以加载使用。</li>
+</ul>
+<h3 id="Session的运行原理"><a href="#Session的运行原理" class="headerlink" title="Session的运行原理"></a>Session的运行原理</h3><ul>
+<li>客户端向服务端发起请求，建立通信</li>
+<li>服务端根据设置的Session创建指令，在服务端创建一个编号为SessionID的文件，里面的值就是Session具体的值(组成部分 变量名 | 类型 :长度:值).</li>
+<li>服务端将创建好的sessionid编号响应给客户端，客户则将该编号存在cookie中(一般我们在浏览器存储的调试栏中会发现cookie中有一个PHPSESSID的键，这就是SessionID，当然这个名称，我可以通过设置服务端是可以改变的).</li>
+<li>当下一次请求时，客户端将这个sessionid携带在请求中，发送给服务端，服务端根据这个sessionid来做一些业务判断. </li>
+</ul>
+<h3 id="Session的存储机制"><a href="#Session的存储机制" class="headerlink" title="Session的存储机制"></a>Session的存储机制</h3><ul>
+<li>存储方式: session默认是文件存储的.我们可以通过php.ini的配置来设置存储驱动传送门。</li>
+<li>生命周期: 当我们未设置session的生命周期时，当浏览器关闭之后存储在客户端的phpsessid自动消失，因为它是存在内存，下次建立连接的时候会重新创建一个phpsessid.之前的session，PHP会自动的根据垃圾回收机制自动删除.这里我们可以根据session_set_cookie_params($expire)函数来设置一个生命周期.</li>
+</ul>
+<h3 id="Session的使用场景"><a href="#Session的使用场景" class="headerlink" title="Session的使用场景"></a>Session的使用场景</h3><ul>
+<li>用户身份识别</li>
+<li>数据传输</li>
+<li>登录控制(是否登录,单点登录)</li>
+</ul>
+<h3 id="Session的特点"><a href="#Session的特点" class="headerlink" title="Session的特点:"></a>Session的特点:</h3><ul>
+<li>不是线程安全的，应该避免多个线程共享同一个Session实例；</li>
+<li>Session实例是轻量级的，所谓轻量级：是指他的创建和删除不需要消耗太多资源；</li>
+<li>Session对象内部有一个缓存，被称为Hibernate第一缓存，他存放被当前工作单元中加载的对象，每个Session实例都有自己的缓存。</li>
+</ul>
+<h3 id="Session的注意事项"><a href="#Session的注意事项" class="headerlink" title="Session的注意事项"></a>Session的注意事项</h3><ul>
+<li>安全性: sessionid是按照一定的算法生成，要保证session的值唯一性和随机性</li>
+<li>客户端禁用cookie，根据上面session的运行原理可以得出，session的存储于传送还是依赖于客户端，因此当客户端禁用cookie时，客户端是无法保存PHPSESSID的，这时候可以通过url重写或者表单来实现session的传输.</li>
+</ul>
+<h2 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h2><ul>
+<li>cookie是远程浏览器存储数据以此追踪用户和识别用户的的机制，从实现来说，cookie是存储在客户端上的一个数据片段(即保存在客户机中的一个简单的文本文件)</li>
+</ul>
+<h3 id="Cookie-1"><a href="#Cookie-1" class="headerlink" title="Cookie"></a>Cookie</h3><ul>
+<li>客户端向服务端发起一个http请求.</li>
+<li>服务端设置一个创建cookie的指令，响应给客户端</li>
+<li>客户端收到服务端响应的指令，根据指令在客户端创建一个cookie</li>
+<li>当下一次请求时，客户端携带这个cookie向服务端发送请求.</li>
+</ul>
+<h3 id="存储机制"><a href="#存储机制" class="headerlink" title="存储机制"></a>存储机制</h3><ul>
+<li>cookie在客户端存储的形式有三种,不同的浏览器的存储机制不同，存的cookie也不同。<ul>
+<li>文件存储: 浏览器会针对不同的域，在磁盘的对应目录创建一个单独的文件，来存储该域下面的cookie值.</li>
+<li>内存存储: 当浏览器关闭时，该cookie随之消失.根据下面的创建语法，当我们未设置过期时间时则会出现这种情况</li>
+<li>flash存储: 这种存储方式是永久存储在磁盘中，即使通过浏览器删除一些数据都是无法删除该方式存储的cookie，如果需要删除，可能通过磁盘的方式</li>
+</ul>
+</li>
+</ul>
+<h3 id="Cokie的应用"><a href="#Cokie的应用" class="headerlink" title="Cokie的应用"></a>Cokie的应用</h3><ul>
+<li>用户身份识别</li>
+<li>数据传输</li>
+<li>登录控制(是否登录、单点登录)</li>
+</ul>
+<h2 id="Session与Cookie的区别"><a href="#Session与Cookie的区别" class="headerlink" title="Session与Cookie的区别"></a>Session与Cookie的区别</h2><ul>
+<li>Session存储在服务端，Cookie存储在客户端。</li>
+<li>Cookie的创建指令由服务端设置</li>
+<li>Session的SessionID需要客户端存储</li>
+</ul>
+<h2 id="cookie与session的几个误区"><a href="#cookie与session的几个误区" class="headerlink" title="cookie与session的几个误区"></a>cookie与session的几个误区</h2><h3 id="客户端禁止cookie，session无法使用？"><a href="#客户端禁止cookie，session无法使用？" class="headerlink" title="客户端禁止cookie，session无法使用？"></a>客户端禁止cookie，session无法使用？</h3><ul>
+<li>使用url重写或者表单提交可以实现.</li>
+</ul>
+<h3 id="session和cookie的安全性比较，session存在客户端安全更高"><a href="#session和cookie的安全性比较，session存在客户端安全更高" class="headerlink" title="session和cookie的安全性比较，session存在客户端安全更高?"></a>session和cookie的安全性比较，session存在客户端安全更高?</h3><ul>
+<li>由于cookie是存在客户端的，相对来说安全性是要低一些，不过在创建的时候可以设置$httpOnly值.</li>
+<li>由于cookie与session是相互关联的，获取到cookie一定程度上获取到了session，同样可以操作session.</li>
+</ul>
+<h3 id="cookie与session是不是在浏览器关闭的时候会消失"><a href="#cookie与session是不是在浏览器关闭的时候会消失" class="headerlink" title="cookie与session是不是在浏览器关闭的时候会消失?"></a>cookie与session是不是在浏览器关闭的时候会消失?</h3><ul>
+<li>这需要查看存储机制了。cookie可以存文件，内存，flash.存内存当然浏览器关闭则消失了；session由于垃圾回收机制，当在垃圾回收机制内是不会删除的，除非你代码中显示的做了删除操作.</li>
+</ul>
+<h3 id="cookie是存储在客户端中，如何增加其安全性"><a href="#cookie是存储在客户端中，如何增加其安全性" class="headerlink" title="cookie是存储在客户端中，如何增加其安全性?"></a>cookie是存储在客户端中，如何增加其安全性?</h3><ul>
+<li>我们可以在设置cookie的时候，增加一些特殊参数，如客户端信息ip、浏览器信息等.</li>
+</ul>
+<h3 id="当cookie存在客户端的文件中，是不是每个浏览器获取到这个文件都可以进行操作"><a href="#当cookie存在客户端的文件中，是不是每个浏览器获取到这个文件都可以进行操作" class="headerlink" title="当cookie存在客户端的文件中，是不是每个浏览器获取到这个文件都可以进行操作?"></a>当cookie存在客户端的文件中，是不是每个浏览器获取到这个文件都可以进行操作?</h3><ul>
+<li>要看浏览器之间对cookie的管理机制是不是一样.</li>
+</ul>
 
             </div>
             <hr>
@@ -278,7 +356,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Hexo/">Hexo</a>
+                      <a class="hover-with-bg" href="/categories/HTTP/">HTTP</a>
                     
                   </div>
                 
@@ -286,7 +364,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                      <a class="hover-with-bg" href="/tags/HTTP/">HTTP</a>
                     
                   </div>
                 
@@ -303,18 +381,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/01/30/nginx-reload%E5%8E%9F%E7%90%86/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">nginx-reload原理</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/12/07/code-server/">
-                        <span class="hidden-mobile">云端IDE</span>
+                      <a href="/2022/01/30/nginx-reload%E5%8E%9F%E7%90%86/">
+                        <span class="hidden-mobile">nginx-reload原理</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -572,6 +644,13 @@
 
 
 
+
+  <script  src="https://cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js" ></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({"theme":"default"});
+    }
+  </script>
 
 
 
