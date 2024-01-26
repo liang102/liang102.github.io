@@ -1,0 +1,223 @@
+# -- Theme Options --
+# These options control how the theme functions and allow you to
+# customise the display of your website.
+#
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/configuration/#theme-parameters
+
+# 主题配色
+colorScheme = "blowfish"
+# 主题外观
+defaultAppearance = "light" # valid options: light or dark
+autoSwitchAppearance = true
+
+# 搜索
+enableSearch = true
+# 代码复制
+enableCodeCopy = true
+
+# 显示在文章最近列表的部分
+ mainSections = ["blogs"]
+# robots = ""
+
+# 禁用网站中所有图像的图像调整大小和优化功能
+disableImageOptimization = false
+
+# 菜单条目的背景图
+defaultBackgroundImage = "/img/sedbz.png" # used as default for background images 
+# 文章的默认背景图
+defaultFeaturedImage = "/img/sedbjt.png" # used as default for featured images in all articles
+
+# highlightCurrentMenuArea = true
+# smartTOC = true
+# smartTOCHideUnfocusedChildren = true
+
+# 头部 导航栏布局
+[header]
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
+
+
+# 页脚
+[footer]
+  # 是否显示页脚菜单
+  showMenu = true
+  # 是否显示作者版权  
+  showCopyright = true
+  # 是否显示主题属性
+  showThemeAttribution = true
+  # 否在站点页脚中显示外观切换器
+  showAppearanceSwitcher = true
+  # 滚动到底部时，是否显示滚动到顶部的箭头
+  showScrollToTop = true
+
+
+# 主页
+[homepage]
+  # 布局 [page, profile, hero, card, background] custom 为自定义
+  layout = "background" # valid options: page, profile, hero, card, background, custom
+  # 主页背景图
+  homepageImage = "/img/sedbz.png" # used in: hero, and card
+  # 是否在主页显示最近文章
+  showRecent = true
+  # 最近文章显示多少篇
+  showRecentItems = 8
+  # 是否显示更多链接
+  showMoreLink = true
+  # 最近文章链接后的目录
+  showMoreLinkDest = "/blogs"
+  # 是否将最近文章显示为卡片视图
+  cardView = true
+  # 是否增强最近文章的宽度
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = false # only used when layout equals background
+
+
+# 文章
+[article]
+  # 是否显示文章日期
+  showDate = false
+  # 是否显示文章浏览次数
+  showViews = true
+  # 是否显示文章点赞
+  showLikes = true
+  # 是否显示文章更新日期
+  showDateUpdated = false
+  # 文章页脚是否显示作者框
+  showAuthor = true
+  # 缩略图是否在每个文章中显示为英雄图像,是否开启默认背景图
+  showHero = true
+  # background 将默认背景图应用到文章中
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  # 使文章背景图随滚动而变得模糊,只有当样式为background or thumbAndBackground 才生效。
+  layoutBackgroundBlur = false # only used when heroStyle equals background or thumbAndBackground
+  # 是否在标题和正文之间加空间
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  # 面包屑是否显示在文章标题中
+  showBreadcrumbs = false
+  # 网站构建时，草稿指示器是否显示在文章旁边
+  showDraftLabel = true
+  #  是否显示编辑文章内容的链接
+  showEdit = false
+  # editURL = "https://github.com/username/repo/"
+  editAppendPath = false
+  # 系列模块是否默认显示打开
+  seriesOpened = false
+  # 标题锚链接是否显示在文章的标题旁边
+  showHeadingAnchors = true
+  # 文章页脚是否显示下一篇/上一篇文章链接
+  showPagination = true
+  # 是否翻转下一篇/上一篇文章的链接方向
+  invertPagination = true
+  # 是否显示文章的阅读时间
+  showReadingTime = true
+  # 文章中是否显示目录 
+  showTableOfContents = true
+  # 是否显示每个文章的相关内容
+  showRelatedContent = true
+  # 设置文章限制数
+  relatedContentLimit = 3
+  # 是否显示与本文相关的分类法
+  showTaxonomies = true
+  # authors分类法是否显示在文章或列表标题中
+  showAuthorsBadges = false
+  # 是否显示文章字数
+  showWordCount = true
+  # 是否开启评论
+  showComments = true
+  # 文章末尾显示哪些共享链接
+  # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+
+
+# 列表
+[list]
+  # 是否开启列表背景图
+  showHero = true
+  # 列表背景图应用的样式
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  # 使文章背景图随滚动而变得模糊,只有当样式为background or thumbAndBackground 才生效。
+  layoutBackgroundBlur = false # only used when heroStyle equals background or thumbAndBackground
+  # 在标题和正文之间添加空间
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  # 面包屑是否显示在列表页面的标题中
+  showBreadcrumbs = false
+  # 文章摘要是否显示在列表页面上
+  showSummary = false
+  # 是否显示列表视图。 firebase 
+  showViews = true
+  # 是否显示喜欢列表
+  showLikes = true
+  # 目录是否显示在列表页上。
+  showTableOfContents = true
+  # 每篇文章是否显示为卡片或简单的内嵌文本
+  showCards = false
+  # 列表页面上的文章是否按年份分组
+  groupByYear = false
+  # 是否将列表显示为卡片库
+  cardView = true
+  # 增加列表中卡片库的宽度以获取可用的完整宽度
+  cardViewScreenWidth = false
+  # 限制项目宽度以prose提高可读性。当没有可用的特征图像时很有用
+  constrainItemsWidth = false
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+# 分类
+[taxonomy]
+  showTermCount = true
+  # 是否显示北京图
+  showHero = true
+  # 背景样式
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = true
+  showLikes = true
+  showTableOfContents = false
+  # 分类显示卡片库
+  cardView = true
+
+[term]
+  showHero = false
+  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = true
+  groupByYear = false
+  cardView = false
+  cardViewScreenWidth = false
+
+[firebase]
+   apiKey = "AIzaSyA4kWh6qFDc6jJ0kF5a2W2Nc-IyUq_92NY"
+   authDomain = "my-blowfish-blog.firebaseapp.com"
+   projectId = "my-blowfish-blog"
+   storageBucket = "my-blowfish-blog.appspot.com"
+   messagingSenderId = "97590131429"
+   appId = "1:97590131429:web:c3b16b6a0812ca6021f20c"
+   measurementId = "G-ZN07XFW3D8"
+
+[fathomAnalytics]
+  # site = "ABC12345"
+  # domain = "llama.yoursite.com"
+
+[buymeacoffee]
+  # identifier = ""
+  # globalWidget = true
+  # globalWidgetMessage = "Hello"
+  # globalWidgetColor = "#FFDD00"
+  # globalWidgetPosition = "Right"
+
+[verification]
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""
+ 
+
+[giscus]
+  enable = true
+  repo = "liang102/liang102.github.io"
+  repoId = "MDEwOlJlcG9zaXRvcnkzODM0NDU5MzE="
+  category = "giscus"
+  categoryId = ""
+  Theme = ""
