@@ -11,7 +11,7 @@ title = "小橘子Single"
     logo = "img/sedlogo.png"
     secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
-    copyright = '&copy; 小橘子Single <br> <a href="https://beian.miit.gov.cn/" target="_blank">桂ICP备2021001631号-2</a>'
+    copyright = '&copy; 小橘子Single <br> <a href="https://beian.miit.gov.cn/" target="_blank">桂ICP备2021001631号</a>'
   # "Copy, _right?_ :thinking_face:"
 
  [author]
