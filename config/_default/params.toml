@@ -17,16 +17,16 @@ enableSearch = true
 enableCodeCopy = true
 
 # 显示在文章最近列表的部分
- mainSections = ["blogs"]
+ mainSections = ["posts"]
 # robots = ""
 
 # 禁用网站中所有图像的图像调整大小和优化功能
 disableImageOptimization = false
 
 # 菜单条目的背景图
-defaultBackgroundImage = "/img/sedbz.png" # used as default for background images 
+defaultBackgroundImage = "img/sedbz.png" # used as default for background images 
 # 文章的默认背景图
-defaultFeaturedImage = "/img/sedbjt.png" # used as default for featured images in all articles
+defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in all articles
 
 # highlightCurrentMenuArea = true
 # smartTOC = true
@@ -56,7 +56,7 @@ defaultFeaturedImage = "/img/sedbjt.png" # used as default for featured images i
   # 布局 [page, profile, hero, card, background] custom 为自定义
   layout = "background" # valid options: page, profile, hero, card, background, custom
   # 主页背景图
-  homepageImage = "/img/sedbz.png" # used in: hero, and card
+  homepageImage = "img/sedbz.png" # used in: hero, and card
   # 是否在主页显示最近文章
   showRecent = true
   # 最近文章显示多少篇
@@ -64,7 +64,7 @@ defaultFeaturedImage = "/img/sedbjt.png" # used as default for featured images i
   # 是否显示更多链接
   showMoreLink = true
   # 最近文章链接后的目录
-  showMoreLinkDest = "/blogs"
+  showMoreLinkDest = "/posts"
   # 是否将最近文章显示为卡片视图
   cardView = true
   # 是否增强最近文章的宽度
@@ -119,7 +119,7 @@ defaultFeaturedImage = "/img/sedbjt.png" # used as default for featured images i
   # 是否显示与本文相关的分类法
   showTaxonomies = true
   # authors分类法是否显示在文章或列表标题中
-  showAuthorsBadges = false
+  showAuthorsBadges = true
   # 是否显示文章字数
   showWordCount = true
   # 是否开启评论
@@ -165,7 +165,7 @@ defaultFeaturedImage = "/img/sedbjt.png" # used as default for featured images i
 # 分类
 [taxonomy]
   showTermCount = true
-  # 是否显示北京图
+  # 是否显示背景图
   showHero = true
   # 背景样式
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
@@ -177,11 +177,11 @@ defaultFeaturedImage = "/img/sedbjt.png" # used as default for featured images i
   cardView = true
 
 [term]
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = true
   groupByYear = false
   cardView = false

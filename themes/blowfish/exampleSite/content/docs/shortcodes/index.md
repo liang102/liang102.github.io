@@ -16,12 +16,12 @@ In addition to all the [default Hugo shortcodes](https://gohugo.io/content-manag
 `alert` outputs its contents as a stylised message box within your article. It's useful for drawing attention to important information that you don't want the reader to miss.
 
 <!-- prettier-ignore-start -->
-| Parameter      | Description                                                                                                                                                                                |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `icon`         | **Optional.** the icon to display on the left side.<br>**Default:** `exclaimation triangle icon` (Check out the [icon shortcode](#icon) for more details on using icons.)                    |
-| `iconColor`    | **Optional.** the color for the icon in basic CSS style.<br>Can be either hex values (`#FFFFFF`) or color names (`white`)<br>By default chosen based on the current color theme .              |
-| `cardColor`    | **Optional.** the color for the card background in basic CSS style.<br>Can be either hex values (`#FFFFFF`) or color names (`white`)<br>By default chosen based on the current color theme .   |
-| `textColor`    | **Optional.** the color for the text in basic CSS style.<br>Can be either hex values (`#FFFFFF`) or color names (`white`)<br>By default chosen based on the current color theme .              |
+| Parameter   | Description                                                                                                                                                                                  |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `icon`      | **Optional.** the icon to display on the left side.<br>**Default:** `exclaimation triangle icon` (Check out the [icon shortcode](#icon) for more details on using icons.)                    |
+| `iconColor` | **Optional.** the color for the icon in basic CSS style.<br>Can be either hex values (`#FFFFFF`) or color names (`white`)<br>By default chosen based on the current color theme .            |
+| `cardColor` | **Optional.** the color for the card background in basic CSS style.<br>Can be either hex values (`#FFFFFF`) or color names (`white`)<br>By default chosen based on the current color theme . |
+| `textColor` | **Optional.** the color for the text in basic CSS style.<br>Can be either hex values (`#FFFFFF`) or color names (`white`)<br>By default chosen based on the current color theme .            |
 <!-- prettier-ignore-end -->
 
 The input is written in Markdown so you can format it however you please.
@@ -297,7 +297,7 @@ In order to add images to the gallery, use `img` tags for each image and add `cl
 
 <!-- prettier-ignore-start -->
 | Parameter | Description                                           |
-|-----------|-------------------------------------------------------|
+| --------- | ----------------------------------------------------- |
 | `repo`    | [String] github repo in the format of `username/repo` |
 <!-- prettier-ignore-end -->
 
@@ -316,13 +316,13 @@ In order to add images to the gallery, use `img` tags for each image and add `cl
 `gitlab` allows you to quickly link a GitLab Project (GitLab's jargon for repo). 
 It displays realtime stats about it, such as the number of stars and forks it has.
 Unlike `github` it can't display the main programming language of a project.
-Finaly custom GitLab instace URL can be provided, as long as the `api/v4/projects/` endpoint is available, making this shortcode compatible with most self-hosted / entreprise deployments.
+Finally, custom GitLab instance URL can be provided, as long as the `api/v4/projects/` endpoint is available, making this shortcode compatible with most self-hosted / enterprise deployments.
 
 <!-- prettier-ignore-start -->
 | Parameter   | Description                                                            |
-|-------------|------------------------------------------------------------------------|
+| ----------- | ---------------------------------------------------------------------- |
 | `projectID` | [String] gitlab numeric ProjectID                                      |
-| `baseURL`   | [String] optional gitlab instace URL, default is `https://gitlab.com/` |
+| `baseURL`   | [String] optional gitlab instance URL, default is `https://gitlab.com/` |
 <!-- prettier-ignore-end -->
 
 **Example 1:**
@@ -355,7 +355,7 @@ Icons can also be used in partials by calling the [icon partial]({{< ref "partia
 
 <br/><br/><br/>
 
-## Katex
+## KaTeX
 
 The `katex` shortcode can be used to add mathematical expressions to article content using the KaTeX package. Refer to the online reference of [supported TeX functions](https://katex.org/docs/supported.html) for the available syntax.
 
@@ -377,6 +377,48 @@ Check out the [mathematical notation samples]({{< ref "mathematical-notation" >}
 
 <br/><br/><br/>
 
+
+## Keyword
+
+
+The `keyword` component can be used to visually highlight certain important words or phrases, e.g. professional skills etc. The `keywordList` shortcode can be used to group together multiple `keyword` items. Each item can have the following properties.
+
+
+<!-- prettier-ignore-start -->
+| Parameter   | Description                                  |
+| ----------- | -------------------------------------------- |
+| `icon`      | Optional icon to be used in the keyword      |
+<!-- prettier-ignore-end -->
+
+The input is written in Markdown so you can format it however you please.
+
+**Example1 :**
+
+```md
+{{</* keyword */>}} Super skill {{</* /keyword */>}}
+```
+
+{{< keyword >}} *Standalone* skill {{< /keyword >}}
+
+**Example2 :**
+
+```md
+{{</* keywordList */>}}
+{{</* keyword icon="github" */>}} Lorem ipsum dolor. {{</* /keyword */>}}
+{{</* keyword icon="code" */>}} **Important** skill {{</* /keyword */>}}
+{{</* /keywordList */>}}
+
+{{</* keyword */>}} *Standalone* skill {{</* /keyword */>}}
+```
+
+{{< keywordList >}}
+{{< keyword icon="github" >}} Lorem ipsum dolor {{< /keyword >}}
+{{< keyword icon="code" >}} **Important** skill {{< /keyword >}}
+{{< /keywordList >}}
+{{< keyword >}} *Standalone* skill {{< /keyword >}}
+
+<br/><br/><br/>
+
 ## Lead
 
 `lead` is used to bring emphasis to the start of an article. It can be used to style an introduction, or to call out an important piece of information. Simply wrap any Markdown content in the `lead` shortcode.
@@ -393,19 +435,20 @@ When life gives you lemons, make lemonade.
 When life gives you lemons, make lemonade.
 {{< /lead >}}
 
-<br/><br/><br/>
+<br/><br/><br/> 
 
 ## List
 
 `List` will display a list of recent articles. This shortcode requires a limit value to constraint the list. Additionally, it supports a `where` and a `value` in order to filter articles by their parameters. Note that this shortcode will not display its parent page but it will count for the limit value.
 
 <!-- prettier-ignore-start -->
-| Parameter | Description                                                                                                                                             |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `limit`   | **Required.** the number of recent articles to display.                                                                                                 |
-| `title`   | Optional title for the list, default is `Recent`                                                                                                        |
-| `where`   | The variable to be used for the query of articles e.g. `Type`                                                                                           |
-| `value`   | The value that will need to match the parameter defined in `where` for the query of articles e.g. for `where` == `Type` a valid value could be `sample` |
+| Parameter  | Description                                                                                                                                             |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `limit`    | **Required.** the number of recent articles to display.                                                                                                 |
+| `title`    | Optional title for the list, default is `Recent`                                                                                                        |
+| `cardView` | Optional card view enabled for the list, default is `false`                                                                                             |
+| `where`    | The variable to be used for the query of articles e.g. `Type`                                                                                           |
+| `value`    | The value that will need to match the parameter defined in `where` for the query of articles e.g. for `where` == `Type` a valid value could be `sample` |
 
 {{< alert >}}
 The `where` and `value` values are used in the following query `where .Site.RegularPages $where $value` in the code of the shortcode. Check [Hugo docs](https://gohugo.io/variables/page/) to learn more about which parameters are available to use.
@@ -424,10 +467,10 @@ The `where` and `value` values are used in the following query `where .Site.Regu
 **Example #2:**
 
 ```md
-{{</* list title="Samples" limit=5 where="Type" value="sample" */>}}
+{{</* list title="Samples" cardView=true limit=5 where="Type" value="sample" */>}}
 ```
 
-{{< list title="Samples" limit=5 where="Type" value="sample">}}
+{{< list title="Samples" cardView=true limit=6 where="Type" value="sample">}}
 
 <br/><br/><br/>
 
@@ -454,6 +497,31 @@ The `where` and `value` values are used in the following query `where .Site.Regu
 {{% /rtl %}}
 
 <br/><br/><br/>
+
+## Markdown Importer
+
+This shortcode allows you to import markdown files from external sources. This is useful for including content from other repositories or websites without having to copy and paste the content.
+
+<!-- prettier-ignore-start -->
+| Parameter | Description                                             |
+| --------- | ------------------------------------------------------- |
+| `url`     | **Required** URL to an externally hosted markdown file. |
+
+
+<!-- prettier-ignore-end -->
+
+
+**Example:**
+
+```md
+{{</* mdimporter url="https://raw.githubusercontent.com/nunocoracao/nunocoracao/master/README.md" */>}}
+
+```
+
+{{< mdimporter url="https://raw.githubusercontent.com/nunocoracao/nunocoracao/master/README.md" >}}
+
+
+<br/><br/>
 
 ## Mermaid
 
@@ -508,7 +576,7 @@ The `timeline` creates a visual timeline that can be used in different use-cases
 | ----------- | -------------------------------------------- |
 | `icon`      | the icon to be used in the timeline visuals. |
 | `header`    | header for each entry                        |
-| `badge`     | text to place within the top righ badge      |
+| `badge`     | text to place within the top right badge      |
 | `subheader` | entry's subheader                            |
 
 <!-- prettier-ignore-end -->

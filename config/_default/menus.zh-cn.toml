@@ -12,7 +12,7 @@
 
 [[main]]
   name = "博客"
-  pageRef = "blogs"
+  pageRef = "posts"
   weight = 10
 
 [[main]]
@@ -22,28 +22,24 @@
 [[main]]
   name = "云计算"
   parent = "知识库"
-  pageRef = "linux"
+  pageRef = "docs/linux"
   weight = 21
 
 [[main]]
-  name = "学无止境"
-  weight = 30
-
-[[main]]
   name = "CSS"
-  parent = "学无止境"
-  pageRef = "css"
-  weight = 31
+  parent = "知识库"
+  pageRef = "docs/css"
+  weight = 22
 
 [[main]]
   name = "关于"
   pageRef = "about"
-  weight= 40
+  weight= 30
 
 [[main]]
   name = "友情链接"
   pageRef = "friends"
-  weight= 50
+  weight= 40
 
 
 #[[main]]
@@ -93,6 +89,11 @@
   name = "标签"
   pageRef = "tags"
   weight = 10
+
+[[footer]]
+  name = "© 小橘子Single"
+  pageRef = "authors"
+  weight = 9
 
 # [[footer]]
 #   name = "Categories"

@@ -16,6 +16,7 @@ mainSections = ["docs"]
 # robots = ""
 
 disableImageOptimization = false
+disableTextInHeader = false
 
 defaultBackgroundImage = "/img/ocean.jpg"
 defaultFeaturedImage = "/img/ocean.jpg"
@@ -49,6 +50,7 @@ smartTOCHideUnfocusedChildren = false
   showDate = false
   showViews = true
   showLikes = true
+  showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
   showHero = true
@@ -71,6 +73,7 @@ smartTOCHideUnfocusedChildren = false
   showAuthorsBadges = true 
   showWordCount = false
   sharingLinks = [ "linkedin", "twitter", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
+  showZenMode = true
 
 [list]
   showHero = true

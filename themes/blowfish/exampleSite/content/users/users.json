@@ -99,22 +99,8 @@
     ]
   },
   {
-    "title": "tabletopflore.com",
-    "url": "https://www.tabletopflore.com",
-    "tags": [
-      "Personal site"
-    ]
-  },
-  {
     "title": "omarohn.de",
     "url": "https://omarohn.de",
-    "tags": [
-      "Personal site"
-    ]
-  },
-  {
-    "title": "spelucin.me",
-    "url": "https://spelucin.me",
     "tags": [
       "Personal site"
     ]
@@ -467,6 +453,125 @@
     "url": "https://rejowski.xyz/",
     "tags": [
       "Personal Site"
+    ]
+  },
+  {
+    "title": "ctulhu.me",
+    "url": "https://ctulhu.me",
+    "tags": [
+      "Personal site"
+    ]
+  },
+  {
+    "title": "v-y-s.com",
+    "url": "https://v-y-s.com/",
+    "tags": [
+      "Personal Site"
+    ]
+  },
+  {
+    "title": "blog.stonegarden.dev",
+    "url": "https://blog.stonegarden.dev/",
+    "tags": [
+      "Personal Site"
+    ]
+  },
+  {
+    "title": "renaud.warnotte.be",
+    "url": "https://renaud.warnotte.be",
+    "tags": [
+      "Personal site"
+    ]
+  },
+  {
+    "title": "BoringTech.net",
+    "url": "https://boringtech.net/",
+    "tags": [
+      "Personal Site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "technicaldc.github.io",
+    "url": "https://technicaldc.github.io/",
+    "tags": [
+      "Personal Site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "binarydigit.cafe",
+    "url": "https://binarydigit.cafe/",
+    "tags": [
+      "Personal site"
+    ]
+  },
+  {
+    "title": "alxhslm.github.io",
+    "url": "https://alxhslm.github.io/",
+    "tags": [
+      "Personal Site"
+    ]
+  },
+  {
+    "title": "fm126.top",
+    "url": "https://fm126.top/",
+    "tags": [
+      "Personal site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "the-maze.net",
+    "url": "https://www.the-maze.net/",
+    "tags": [
+      "Personal site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "datatodroids.tech",
+    "url": "https://datatodroids.tech/",
+    "tags": [
+      "Personal site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "DXPetti.com",
+    "url": "https://www.dxpetti.com/",
+    "tags": [
+      "Personal site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "asterisk.lol",
+    "url": "https://asterisk.lol",
+    "tags": [
+      "Personal Site"
+    ]
+  },
+  {
+    "title": "notes.bluesdriveamelia.space",
+    "url": "https://notes.bluesdriveamelia.space/",
+    "tags": [
+      "Blog",
+      "Personal site"
+    ]
+  },
+  {
+    "title": "ekwska.com",
+    "url": "https://ekwska.com",
+    "tags": [
+      "Personal blog"
+    ]
+  },
+  {
+    "title": "smileguide.github.io",
+    "url": "https://smileguide.github.io",
+    "tags": [
+      "Personal site"
     ]
   }
 ]

@@ -1,11 +1,10 @@
 const sitePreference = document.documentElement.getAttribute("data-default-appearance");
 const userPreference = localStorage.getItem("appearance");
 
-/* 根据用户偏好设置主题外观，找到文档根元素添加或移除“dark”类名，实现暗色主题的切换 */
 if ((sitePreference === "dark" && userPreference === null) || userPreference === "dark") {
   document.documentElement.classList.add("dark");
 }
-/* 根据用户偏好设置和系统颜色方案来切换主题外观 */
+
 if (document.documentElement.getAttribute("data-auto-appearance") === "true") {
   if (
     window.matchMedia &&

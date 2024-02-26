@@ -1,0 +1,8 @@
+{
+    "name": "小橘子Single",
+    "image" : "img/avatar.png",
+    "bio": "呱呱呱",
+    "social": [
+        { "github": "https://github.com/liang102" }
+    ]
+}

@@ -13,6 +13,15 @@ series_order: 3
 This section assumes you have already [installed the Blowfish theme]({{< ref "docs/installation" >}}).
 {{< /alert >}}
 
+</br>
+{{< alert "fire" >}}
+We just launched a CLI tool to help you get started with Blowfish. It will help you with installation and configuration. Install the CLI tool globally using:
+```bash
+npx blowfish-tools
+```
+{{< /alert >}}
+
+
 The config files that ship with Blowfish contain all of the possible settings that the theme recognises. By default, many of these are commented out but you can simply uncomment them to activate or change a specific feature.
 
 ## Basic configuration
@@ -249,7 +258,7 @@ The default `name` is the `pageRef` title cased.
 
 ## Thumbnails & Backgrounds
 
-Blowfish was built so it would be easy to add visual support to your articles. If your familiar with Hugo article strucutre, you just need to place an image file (almost all formats are supported bue we recommend `.png` or `.jpg`) that starts with `feature*` inside your article folder. And that's it, Blowfish will then able to both use the image as a thumbnail within your website as well as for <a target="_blank" href="https://oembed.com/">oEmbed</a> cards across social platforms. 
+Blowfish was built so it would be easy to add visual support to your articles. If your familiar with Hugo article structure, you just need to place an image file (almost all formats are supported but we recommend `.png` or `.jpg`) that starts with `feature*` inside your article folder. And that's it, Blowfish will then able to both use the image as a thumbnail within your website as well as for <a target="_blank" href="https://oembed.com/">oEmbed</a> cards across social platforms. 
 
 [Here]({{< ref "thumbnails" >}}) is also a guide with more info and a [sample]({{< ref "thumbnail_sample" >}}) if you want to see how you can do it.
 
