@@ -1,10 +1,12 @@
 ---
 title: "6.继承"
 externalUrl: ""
-summary: ""
+summary: "元素继承用例"
 tags: ["css"]
 showReadingTime: false
 weight: 3
+series: ["css"]
+series_order: 6
 ---
 
 

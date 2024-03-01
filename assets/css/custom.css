@@ -1,0 +1,35 @@
+/* 站长字体：https://font.chinaz.com/ */
+/* 谷歌字体：fonts.google.com */
+
+/* 自定义字体 */
+@font-face {
+    font-family: zaozigongfangziti;
+    src: url('/fonts/zaozigongfangziti.otf');
+}
+
+/* 谷歌 ZCOOL_KuaiLe 字体
+@font-face {
+    font-family: zcool;
+    src: url('/fonts/zcool.ttf');
+}
+*/
+
+/* 免费字体 
+@font-face {
+    font-family: miaoziwenanti;
+    src: url('/fonts/miaoziwenanti.ttf');
+}
+*/
+
+/* 谷歌字体 Noto_Sans_SC 
+@font-face {
+    font-family: wght;
+    src: url('/fonts/wght.ttf');
+}
+*/
+
+/* 字体应用整个网站 */
+html {
+    font-family: zaozigongfangziti;
+    font-size: 13pt;
+}

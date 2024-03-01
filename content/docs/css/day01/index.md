@@ -1,10 +1,12 @@
 ---
 title: "1.为网页添加样式"
 externalUrl: ""
-summary: ""
+summary: "声明样式的应用"
 tags: ["css"]
 showReadingTime: false
 weight: 8
+series: ["css"]
+series_order: 1
 ---
 
 ### 术语解释

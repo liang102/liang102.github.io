@@ -1,10 +1,12 @@
 ---
 title: "4.层叠"
 externalUrl: ""
-summary: ""
+summary: "解决声明冲突的原理讲解"
 tags: ["css"]
 showReadingTime: false
 weight: 5
+series: ["css"]
+series_order: 4
 ---
 
 > 声明冲突：同一个样式，多次应用到同一个元素。</br>

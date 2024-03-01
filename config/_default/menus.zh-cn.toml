@@ -12,35 +12,60 @@
 
 [[main]]
   name = "博客"
+  pre = "book-solid"
   pageRef = "posts"
   weight = 10
 
 [[main]]
   name = "知识库"
+  pre = "list"
   weight = 20
 
 [[main]]
-  name = "云计算"
+  name = "主题快速上手"
+  pre = "substack"
   parent = "知识库"
-  pageRef = "docs/linux"
+  pageRef = "docs/theme"
   weight = 21
 
 [[main]]
-  name = "CSS"
+  name = "云计算"
+  pre = "substack"
   parent = "知识库"
-  pageRef = "docs/css"
+  pageRef = "docs/linux"
   weight = 22
 
 [[main]]
+  name = "CSS"
+  pre = "substack"
+  parent = "知识库"
+  pageRef = "docs/css"
+  weight = 23
+
+[[main]]
   name = "关于"
+  pre = "blogger"
   pageRef = "about"
   weight= 30
 
 [[main]]
   name = "友情链接"
+  pre = "link"
   pageRef = "friends"
   weight= 40
 
+[[main]]
+  name = ""
+  pre = "rss"
+  url = "https://ergua.site/index.xml"
+  weight = 50
+
+
+[[subnavigation]]
+  name = "标签"
+  pre = "tag"
+  pageRef = "tags"
+  weight = 10
 
 #[[main]]
 #  name = "Parent"
@@ -85,15 +110,15 @@
 # the copyright notice. Configure as per the main menu above.
 
 
-[[footer]]
-  name = "标签"
-  pageRef = "tags"
-  weight = 10
+#[[footer]]
+#  name = "标签"
+#  pageRef = "tags"
+#  weight = 10
 
 [[footer]]
-  name = "© 小橘子Single"
+  name = "©小橘子Single"
   pageRef = "authors"
-  weight = 9
+  weight = 10
 
 # [[footer]]
 #   name = "Categories"

@@ -19,7 +19,7 @@ title = "小橘子Single"
    image = "img/avatar.png"
    headline = "如你所见"
    # 设置文章中的作者信息
-   bio = "日积月累"
+   bio = "人生如戏，全靠演技"
    links = [
      { github = "https://github.com/liang102/liang102.github.io.git" },
    ]

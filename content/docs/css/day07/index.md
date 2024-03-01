@@ -1,10 +1,12 @@
 ---
 title: "7.属性值的计算过程"
 externalUrl: ""
-summary: ""
+summary: "元素属性渲染的计算过程原理"
 tags: ["css"]
 showReadingTime: false
 weight: 2
+series: ["css"]
+series_order: 7
 ---
 
 ### 属性值的计算过程

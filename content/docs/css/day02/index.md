@@ -1,10 +1,12 @@
 ---
 title: "2.常见的样式声明"
 externalUrl: ""
-summary: ""
+summary: "常见的样式声明及用例"
 tags: ["css"]
 showReadingTime: false
 weight: 7
+series: ["css"]
+series_order: 2
 ---
 
 ### color（文字颜色）

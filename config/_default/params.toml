@@ -6,7 +6,7 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 # 主题配色
-colorScheme = "blowfish"
+colorScheme = "maiden"  # "blowfish"
 # 主题外观
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = true
@@ -101,9 +101,9 @@ defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in
   # editURL = "https://github.com/username/repo/"
   editAppendPath = false
   # 系列模块是否默认显示打开
-  seriesOpened = false
+  seriesOpened = true
   # 标题锚链接是否显示在文章的标题旁边
-  showHeadingAnchors = true
+  showHeadingAnchors = false
   # 文章页脚是否显示下一篇/上一篇文章链接
   showPagination = true
   # 是否翻转下一篇/上一篇文章的链接方向
@@ -141,7 +141,7 @@ defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in
   # 面包屑是否显示在列表页面的标题中
   showBreadcrumbs = false
   # 文章摘要是否显示在列表页面上
-  showSummary = false
+  showSummary = true
   # 是否显示列表视图。 firebase 
   showViews = true
   # 是否显示喜欢列表
@@ -164,27 +164,42 @@ defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in
 
 # 分类
 [taxonomy]
+  # 分类术语的文章数量是否显示再分类列表中
   showTermCount = true
   # 是否显示背景图
   showHero = true
-  # 背景样式
+  # 背景样式，["basic","big","background","thumbAndBackground"]
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  # 面包屑是否显示在分类标题中
   showBreadcrumbs = false
+  # 是否显示文章浏览次数
   showViews = true
+  # 是否显示文章点赞。
   showLikes = true
+  # 目录是否显示在分类法上
   showTableOfContents = false
   # 分类显示卡片库
   cardView = true
 
+# 系列
 [term]
+  # 背景图是否显示在每个术语页面上
   showHero = true
+  # 背景图样式,["basic","big","background","thumbAndBackground"]
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  showBreadcrumbs = false
+  # 面包屑是否显示在术语标题中
+  showBreadcrumbs = true
+  # 是否显示文章浏览次数
   showViews = true
+  # 是否显示文章点赞。
   showLikes = true
+  # 目录是否按术语显示。
   showTableOfContents = true
+  # 术语页面上的文章是否按年份分组。
   groupByYear = false
-  cardView = false
+  # 将列表显示为卡片库。
+  cardView = true
+  # 增加列表中卡片库的宽度以获取可用的完整宽度
   cardViewScreenWidth = false
 
 [firebase]

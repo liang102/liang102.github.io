@@ -5,9 +5,10 @@ summary: "SFTP是基于SSH（Secure Shell）的协议，用于在客户端和服
 tags: ["sftp"]
 showReadingTime: false
 weight: 10
-authors:
+showAuthor: true
+authors: 
   - '小橘子Single'
-showauthor: false
+showAuthorsBadges : true
 ---
 
 ## 背景

@@ -1,0 +1,40 @@
+/* test schemes */
+
+:root {
+  --color-neutral: 255, 255, 255;
+  /* 紫色 */
+  --color-neutral-50: 241, 242, 252;
+  --color-neutral-100: 230, 230, 249;
+  --color-neutral-200: 211, 210, 243;
+  --color-neutral-300: 185, 182, 235;
+  --color-neutral-400: 161, 152, 225;
+  --color-neutral-500: 144, 126, 214;
+  --color-neutral-600: 128, 100, 199;
+  --color-neutral-700: 85, 66, 133;
+  --color-neutral-800: 75, 62, 113;
+  --color-neutral-900: 45, 36, 66;
+
+  /* 粉色 */
+  --color-primary-50: 254, 245, 254;
+  --color-primary-100: 253, 234, 253;
+  --color-primary-200: 249, 213, 249;
+  --color-primary-300: 241, 162, 237;
+  --color-primary-400: 236, 134, 230;
+  --color-primary-500: 222, 87, 213;
+  --color-primary-600: 193, 56, 181;
+  --color-primary-700: 160, 43, 148;
+  --color-primary-800: 131, 37, 119;
+  --color-primary-900: 108, 35, 97;
+
+  /* 蓝色 */
+  --color-secondary-50: 239, 248, 255;
+  --color-secondary-100: 220, 238, 253;
+  --color-secondary-200: 192, 226, 253;
+  --color-secondary-300: 149, 209, 251;
+  --color-secondary-400: 98, 183, 248;
+  --color-secondary-500: 78, 161, 244;
+  --color-secondary-600: 40, 123, 232;
+  --color-secondary-700: 32, 101, 213;
+  --color-secondary-800: 32, 82, 173;
+  --color-secondary-900: 32, 72, 136; 
+}

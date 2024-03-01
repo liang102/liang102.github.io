@@ -1,10 +1,12 @@
 ---
 title: "8.盒模型应用"
 externalUrl: ""
-summary: ""
+summary: "盒模型应用"
 tags: ["css"]
 showReadingTime: false
 weight: 1
+series: ["css"]
+series_order: 8
 ---
 
 ## 改变宽高范围

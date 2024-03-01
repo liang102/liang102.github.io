@@ -1,10 +1,12 @@
 ---
 title: "3.选择器"
 externalUrl: ""
-summary: ""
+summary: "选择器的用法案例"
 tags: ["css"]
 showReadingTime: false
 weight: 6
+series: ["css"]
+series_order: 3
 ---
 
 
