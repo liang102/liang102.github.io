@@ -1,0 +1,22 @@
+        <link href="https://unpkg.com/@waline/client@v3/dist/waline.css" rel="stylesheet" />
+        <script src="https://unpkg.com/@waline/client@v3/dist/waline.js"></script>      
+        <div id="waline"></div>    
+        <script type="module">    
+              import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+              init({      
+              el: '#waline',      
+              meta: {{ .Site.Params.waline.meta }}, 
+              requiredMeta: {{ .Site.Params.waline.requiredMeta }}, 
+              login: {{ .Site.Params.waline.login }},
+              comment: {{ .Site.Params.waline.comment }},
+              placeholder: {{ .Site.Params.waline.placeholder }},
+              serverURL: {{ .Site.Params.waline.serverURL }},
+              avatarCDN: {{ .Site.Params.waline.avatarCDN }},
+              pageSize: {{ .Site.Params.waline.pageSize }},
+              avatar: {{ .Site.Params.waline.avatar }},
+              lang: {{ .Site.Params.waline.lang }},
+              visitor: {{ .Site.Params.waline.visitor }},
+              highlight: {{ .Site.Params.waline.highlight }},
+              uploadImage: {{ .Site.Params.waline.uploadImage }},
+              emoji: {{  .Site.Params.waline.emoji }}    })
+              </script>    

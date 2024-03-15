@@ -1,0 +1,71 @@
+<!-- 引用 artitalk -->
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<!-- 存放说说的容器 -->
+<div id="artitalk_main"></div>
+{{ if .IsNamedParams }}
+<script>
+new Artitalk({
+    appId: "{{ .Get "appId" }}", // Your LeanCloud appId
+    appKey: "{{ .Get "appKey" }}", // Your LeanCloud appKey
+    avatarPla: "{{ .Get "avatar" | default "/img/avatar.png" }}",
+    shuoPla: "{{ .Get "shuoPla" | default "每日一说" }}",  // 评论框提示
+    pageSize: "{{ .Get "pageSize" | default "8" }}", //每页展示数量
+    atComment: {{ .Get "atComment" | default 0 }},
+    color1: "{{ .Get "color1" | default "rgba(255, 0, 0, 0)" }}",
+    color2: "{{ .Get "color2" | default "rgba(255, 0, 0, 0)" }}",
+    color3: "{{ .Get "color3" | default "rgb(75, 62, 113)" }}",
+    atEmoji: {
+        weibo: "https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo",
+        bilibili: "https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili",
+        qq: "https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq",
+        baiyan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/baiyan.png",
+        bishi: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bishi.png",
+        bizui: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bizui.png",
+        chan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/chan.png",
+        daku: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/daku.png",
+        dalao: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalao.png",
+        dalian: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalian.png",
+        dianzan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dianzan.png",
+        doge: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/doge.png",
+        facai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/facai.png",
+        fadai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fadai.png",
+        fanu: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fanu.png",
+        },
+})
+</script>
+{{ else }}
+<!-- 引用 artitalk -->
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<!-- 存放说说的容器 -->
+<div id="artitalk_main"></div>
+<script>
+new Artitalk({
+    appId: "{{ .Get 0 }}", // Your LeanCloud appId
+    appKey: "{{ .Get 1 }}", // Your LeanCloud appKey
+    avatarPla: "{{ .Get 2 | default "/img/avatar.png" }}", //头像
+    shuoPla: "{{ .Get 3 | default "每日一说" }}",  // 评论框提示
+    pageSize: "{{ .Get 4 | default "8" }}", //每页展示数量
+    atComment: {{ .Get 5 | default 0 }},
+    color1: "{{ .Get 6 | default "rgba(255, 0, 0, 0)" }}",
+    color2: "{{ .Get 7 | default "rgba(255, 0, 0, 0)" }}",
+    color3: "{{ .Get 8 | default "rgb(75, 62, 113)" }}",
+    atEmoji: {
+        weibo: "https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo",
+        bilibili: "https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili",
+        qq: "https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq",
+        baiyan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/baiyan.png",
+        bishi: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bishi.png",
+        bizui: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bizui.png",
+        chan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/chan.png",
+        daku: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/daku.png",
+        dalao: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalao.png",
+        dalian: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalian.png",
+        dianzan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dianzan.png",
+        doge: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/doge.png",
+        facai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/facai.png",
+        fadai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fadai.png",
+        fanu: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fanu.png",
+    }
+})
+</script>
+{{ end }}

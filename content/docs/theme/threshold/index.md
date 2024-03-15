@@ -4,7 +4,6 @@ externalUrl: ""
 summary: "使用Linux结合GitHub+hugo+blowfish搭建个人博客网站"
 tags: ["hugo","blowfish","github"]
 showReadingTime: false
-comment: true
 series: ["主题相关文档"]
 series_order: 1
 weight: 100

@@ -2,7 +2,6 @@
 title: "Blowfish主题菜单设置"
 externalUrl: ""
 summary: "网站主页菜单布局教程"
-categories: ["document"]
 tags: ["hugo","blowfish"]
 showReadingTime: false
 series: ["主题相关文档"]

@@ -1,0 +1,12 @@
+<!-- Twikoo --> 
+    <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/{{ .Site.Params.twikoo.version }}/twikoo.all.min.js"></script>
+    <script>
+        twikoo.init({
+            envId: '{{ .Site.Params.twikoo.envId }}',
+            el: '#tcomment',
+            //lang: 'zh-CN',
+            region: '{{ .Site.Params.twikoo.region }}',  //我的区域是香港ap-east-1,默认是ap-shanghai
+            //path: '',
+        });
+    </script>

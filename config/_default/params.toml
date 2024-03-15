@@ -123,7 +123,7 @@ defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in
   # 是否显示文章字数
   showWordCount = true
   # 是否开启评论
-  showComments = true
+  # showComments = true
   # 文章末尾显示哪些共享链接
   # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
 
@@ -202,6 +202,58 @@ defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in
   # 增加列表中卡片库的宽度以获取可用的完整宽度
   cardViewScreenWidth = false
 
+# 全局自定义评论
+[Comments]
+  # 是否开启自定义评论
+  enable = true
+  # giscus | twikoo 默认 giscus
+  provider = "giscus"
+
+[pageComments]
+  # 是否开启页面评论，不建议全局开启
+  enable = false
+
+  # Giscus  https://giscus.app/zh-CN 
+  [giscus]
+    enable = false
+    repo = "liang102/liang102.github.io"
+    repoId = "MDEwOlJlcG9zaXRvcnkzODM0NDU5MzE="
+    category = "Announcements"
+    categoryId = "DIC_kwDOFtrrq84CbZYf"
+    Theme = ""
+  
+  # Twikoo  https://twikoo.js.org/
+  [twikoo]
+    enable = false
+    version = "1.6.26"
+    envId = "https://twikoo.ergua.site"
+    region = ""
+
+  # Waline https://waline.js.org/
+  [waline]
+    enable = false
+    meta = ["nick","mail","link"]    # 评论属性
+    requiredMeta  = ['nick','mail']  # 必填评论属性值 
+    login = "force"                  # 登录后访问
+    comment = true                   # 评论数统计 
+    placceholder = "欢迎留言"        # 评论框占位提示符
+    serverURL =  "https://waline.ergua.site"   # waline 服务端地址
+    #imageHosting =                  # 图床api地址
+    uploadImage = false              # 评论上传图片功能
+    avatar = "wavatar"               # 头像
+    avatarCDN = "https://sdn.geekzu.org/avatar/"  # 头像cdn
+    pageSize = 12                    # 评论每页条数
+    lang = "zh-CN"                   # 语言
+    visitor = true                   # 文章访问量统计
+    highlight = true                 # 代码高亮
+    emoji = ['https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo','https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili','https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq']
+
+ # Artitalk  https://artitalk.js.org/
+ # [artitalk]
+ #   appId = "uS8XNGcT74uACiL1Z6C4HBEW-MdYXbMMI"
+ #   appKey = "mnciwr7HSYldy5m481CPVnYZ"
+
+
 [firebase]
    apiKey = "AIzaSyA4kWh6qFDc6jJ0kF5a2W2Nc-IyUq_92NY"
    authDomain = "my-blowfish-blog.firebaseapp.com"
@@ -229,10 +281,3 @@ defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in
   # yandex = ""
  
 
-[giscus]
-  enable = true
-  repo = "liang102/liang102.github.io"
-  repoId = "MDEwOlJlcG9zaXRvcnkzODM0NDU5MzE="
-  category = "giscus"
-  categoryId = ""
-  Theme = ""

@@ -11,14 +11,14 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "博客"
-  pre = "book-solid"
+  name = "笔记"
+  pre = "pencil"
   pageRef = "posts"
   weight = 10
 
 [[main]]
   name = "知识库"
-  pre = "list"
+  pre = "book-open"
   weight = 20
 
 [[main]]
@@ -43,16 +43,43 @@
   weight = 23
 
 [[main]]
+  name = "实用工具"
+  pre = "substack"
+  parent = "知识库"
+  pageRef = "docs/links"
+  weight = 24
+
+[[main]]
   name = "关于"
-  pre = "blogger"
-  pageRef = "about"
-  weight= 30
+  pre = "circle-info"
+  weight = 30
+
+[[main]]
+  name = "关于我"
+  pre = "user-solid"
+  parent = "关于"
+  pageRef = "about/me/index.md"
+  weight= 31
+
+[[main]]
+  name = "说说"
+  pre = "edit"
+  parent = "关于"
+  pageRef = "about/message/index.md"
+  weight = 32
 
 [[main]]
   name = "友情链接"
   pre = "link"
-  pageRef = "friends"
-  weight= 40
+  parent = "关于"
+  pageRef = "about/friends"
+  weight= 33
+
+[[main]]
+  name = "实用工具"
+  pre = "wrench-solid"
+  pageRef = "tool"
+  weight = 40
 
 [[main]]
   name = ""

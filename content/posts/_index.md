@@ -1,7 +1,8 @@
 ---
-title: "博客"
+title: "笔记"
 description: "随手记"
-
+twikoo:
+  enable: false
 cascade:
   showDate: false
   showAuthor: false

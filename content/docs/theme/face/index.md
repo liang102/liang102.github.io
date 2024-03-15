@@ -2,8 +2,7 @@
 title: "网站图标设置"
 externalUrl: ""
 summary: "浏览器图标以及站点图标和作者图标教程"
-categories: ["document"]
-tags: ["hugo","blowfish","theme"]
+tags: ["blowfish","icon"]
 showReadingTime: false
 series: ["主题相关文档"]
 series_order: 3
@@ -28,6 +27,7 @@ weight: 2
 ```
 
 ## 浏览器图标设置
+[网站图标生成器](https://realfavicongenerator.net/)
 - 将主题下`theme/blowfish/static/`的静态文件夹中`favicon.ico site.webmanifest` 拷贝到`static` 文件夹中。
 - 需要5张相同的图片，分辨率大小分别为`512x512、192x192、180x180、32x32、16x16` 放到`static` 文件夹里.
 - 按照分辨率依次重命名为: `android-chrome-192x192.png  android-chrome-512x512.png  apple-touch-icon.png  favicon-16x16.png  favicon-32x32.png`

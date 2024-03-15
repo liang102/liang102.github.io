@@ -2,7 +2,6 @@
 title: "网站主题背景图设置"
 externalUrl: ""
 summary: "blowfish主题背景应用"
-categories: ["document"]
 tags: ["hugo","blowfish","theme"]
 showReadingTime: false
 series: ["主题相关文档"]
