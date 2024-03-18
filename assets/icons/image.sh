@@ -16,4 +16,3 @@ check_qshell () {
 
 check_qshell qshell
 
-

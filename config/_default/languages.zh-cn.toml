@@ -22,6 +22,8 @@ title = "小橘子Single"
    bio = "人生如戏，全靠演技"
    links = [
      { github = "https://github.com/liang102/liang102.github.io.git" },
+     { csdn = "https://blog.csdn.net/weixin_45971087" },
+     { email = "mailto:1509593534@qq.com" },
    ]
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },

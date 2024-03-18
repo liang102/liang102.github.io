@@ -27,14 +27,11 @@ weight: 2
 ```
 
 ## 浏览器图标设置
-[网站图标生成器](https://realfavicongenerator.net/)
-- 将主题下`theme/blowfish/static/`的静态文件夹中`favicon.ico site.webmanifest` 拷贝到`static` 文件夹中。
-- 需要5张相同的图片，分辨率大小分别为`512x512、192x192、180x180、32x32、16x16` 放到`static` 文件夹里.
-- 按照分辨率依次重命名为: `android-chrome-192x192.png  android-chrome-512x512.png  apple-touch-icon.png  favicon-16x16.png  favicon-32x32.png`
-- `180x180` 的分辨率图片对应为: `apple-touch-icon.png`
+- [网站图标生成器](https://realfavicongenerator.net/)
+- 将生成的图标放入`static/`目录下即可
+
 ```bash
-cp theme/blowfish/static/favicon.ico  static/
-cp theme/blowfish/static/site.webmanifest  static/
+unzip -d static favicon_package_v0.16.zip
 
 ls static/
 android-chrome-192x192.png  android-chrome-512x512.png  apple-touch-icon.png  favicon-16x16.png  favicon-32x32.png  favicon.ico  site.webmanifest

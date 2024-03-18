@@ -23,21 +23,21 @@
 
 [[main]]
   name = "主题快速上手"
-  pre = "substack"
+  pre = "fish-fins-solid"
   parent = "知识库"
   pageRef = "docs/theme"
   weight = 21
 
 [[main]]
   name = "云计算"
-  pre = "substack"
+  pre = "linux"
   parent = "知识库"
   pageRef = "docs/linux"
   weight = 22
 
 [[main]]
   name = "CSS"
-  pre = "substack"
+  pre = "css3-alt"
   parent = "知识库"
   pageRef = "docs/css"
   weight = 23
@@ -63,7 +63,7 @@
 
 [[main]]
   name = "说说"
-  pre = "edit"
+  pre = "comment"
   parent = "关于"
   pageRef = "about/message/index.md"
   weight = 32
@@ -78,7 +78,7 @@
 [[main]]
   name = "实用工具"
   pre = "wrench-solid"
-  pageRef = "tool"
+  pageRef = "tools"
   weight = 40
 
 [[main]]
