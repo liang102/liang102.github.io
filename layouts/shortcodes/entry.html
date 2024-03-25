@@ -1,0 +1,50 @@
+{{ $icon := .Get "icon" | default "check" }}
+{{ $header := .Get "header" }}
+{{ $badge := .Get "badge" }}
+{{ $subheader := .Get "subheader" }}
+{{ $text := .Get "text" }}
+{{ $.Scratch.Set "time" (.Get "time") }}
+{{ $.Scratch.Set "place" (.Get "place") }}
+
+<li class="list-none">
+  <div class="flex flex-start">
+    <div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+      {{ partial "icon" $icon }}
+    </div>
+    <!-- /*  del min-w-full */-->
+    <div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+      <div class="flex justify-between">
+        {{ if $header }}
+        <h2 class="mt-0">
+          {{ $header }} 
+        </h2>
+        {{ end }}
+        {{ if $badge }}
+        <h3 class="">
+          {{ partial "badge"  $badge}}
+        </h3>
+        {{ end }}
+      </div>
+      {{ if $subheader }}
+      <h4 class="mt-0">
+        {{ $subheader }}
+      </h4>
+      {{ end }}
+      <p class="text-gray-700 mb-6">{{- .Inner -}}</p>
+     <div class="text-sm text-neutral-500 dark:text-neutral-400">
+    <div class="flex flex-row flex-wrap items-center">
+        <time>{{ .Get "date" }}</time>
+
+       {{ if ($.Scratch.Get "time") }}
+          <span class="px-2 text-primary-500">·</span>
+         <span>{{ .Get "time"  | markdownify }}</span>
+       {{ end }}
+       {{ if ($.Scratch.Get "place") }}
+          <span class="px-2 text-primary-500">·</span>
+         <span>{{ .Get "place"  | markdownify }}</span>
+       {{ end }}
+       </div>
+       </div>
+    </div>
+  </div>
+</li>

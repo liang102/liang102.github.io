@@ -177,7 +177,7 @@ defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in
   # 是否显示文章点赞。
   showLikes = true
   # 目录是否显示在分类法上
-  showTableOfContents = false
+  showTableOfContents = true
   # 分类显示卡片库
   cardView = true
 
@@ -253,6 +253,8 @@ defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in
  #   appId = "uS8XNGcT74uACiL1Z6C4HBEW-MdYXbMMI"
  #   appKey = "mnciwr7HSYldy5m481CPVnYZ"
 
+[busuanzi]
+  enable = true
 
 [firebase]
    apiKey = "AIzaSyA4kWh6qFDc6jJ0kF5a2W2Nc-IyUq_92NY"

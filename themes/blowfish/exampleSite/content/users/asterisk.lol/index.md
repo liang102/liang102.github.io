@@ -1,8 +1,8 @@
 ---
                 title: "asterisk.lol"
-                tags: [Personal Site]
+                tags: [Blog,Personal Site]
                 externalUrl: "https://asterisk.lol"
-                date: 9922-08-08
+                date: 9929-08-08
                 showDate: false
                 showAuthor: false
                 showReadingTime: false

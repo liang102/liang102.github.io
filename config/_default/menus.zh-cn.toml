@@ -65,14 +65,14 @@
   name = "说说"
   pre = "comment"
   parent = "关于"
-  pageRef = "about/message/index.md"
+  pageRef = "about/shuoshuo/index.md"
   weight = 32
 
 [[main]]
   name = "友情链接"
   pre = "link"
   parent = "关于"
-  pageRef = "about/friends"
+  pageRef = "about/friends/index.md"
   weight= 33
 
 [[main]]
