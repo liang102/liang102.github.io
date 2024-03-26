@@ -14,7 +14,7 @@ authors:
 ---
 
 {{< talk >}}
-  {{< entry icon="" header="" badge="" subheader="" date="" time="" place="" >}}
+  {{< entry icon="" header="" badge="" subheader="" date="" time="" place="深圳" >}}
   example...
   {{ text }}
     example...
