@@ -28,6 +28,7 @@ weight: 2
 
 ## 浏览器图标设置
 - [网站图标生成器](https://realfavicongenerator.net/)
+- [网站图标转换器](https://favicon.io/favicon-converter/)
 - 将生成的图标放入`static/`目录下即可
 
 ```bash

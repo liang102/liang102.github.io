@@ -1,6 +1,6 @@
 ---
-title: "学习"
-description: "学而时习之，不亦说乎"
+title: "CSS"
+description: "关于一些CSS的知识"
 cascade:
   showDate: false
   showAuthor: false

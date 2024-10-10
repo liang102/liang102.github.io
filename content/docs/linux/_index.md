@@ -1,9 +1,5 @@
 ---
-title: "日积月累"
-description: "随手记"
-cascade:
-  showDate: false
-  showAuthor: false
-  invertPagination: true
+title: "Linux"
+description: "随手记，日积月累"
 ---
-日积月累，水滴石穿。
+随手记

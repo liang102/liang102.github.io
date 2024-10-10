@@ -9,6 +9,7 @@ Comments:
 showReadingTime: false
 showPagination: false
 showRelatedContent: false
+weight: 1
 ---
 
 {{< talk >}}

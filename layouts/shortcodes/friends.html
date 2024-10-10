@@ -18,17 +18,18 @@
 </style>
  {{ if .IsNamedParams }}
 <div>
-	<hr/>
+        <hr/>
 	<div class="flex author">
 		<img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4 medium-zoom-image" src="{{ .Get "avatar" }}" referrerpolicy="no-referrer">
 		<div class="place-self-center" onclick='window.open({{ .Get "link" }})'>
 			<div class="font-semibold leading-6 text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral-300">
 				{{ .Get "name" }}
-			</div>
-			<div class="text-[0.8rem] leading-3 text-neutral-500 dark:text-neutral-400">
+		         </div>
+
+                         <div class="text-[0.8rem] leading-3 text-neutral-500 dark:text-neutral-400">
 				{{ .Get "description" }}
-			</div>
-		</div>
-	</div>
+	                 </div>
+	         </div>
+          </div>
 </div>
 {{ end }}

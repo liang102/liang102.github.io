@@ -39,7 +39,8 @@
       {{/* busuanzi */}}
       {{ if .IsHome }}
       {{ if .Params.busuanzi | default (.Site.Params.busuanzi.enable | default false) }}
-        本站访客总数: <span id="busuanzi_value_site_uv"></span>
+        <span id=>
+        本站访客总数: <span id="busuanzi_value_site_pv"></span>
       {{ end }}
       {{ end }}
     </p>

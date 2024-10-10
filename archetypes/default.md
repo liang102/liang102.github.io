@@ -1,6 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+externalUrl: ""
+summary: ""
+tags: ""
+authors:
+ - "小橘子Single"
 ---
 

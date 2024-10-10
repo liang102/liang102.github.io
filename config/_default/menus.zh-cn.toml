@@ -43,6 +43,13 @@
   weight = 23
 
 [[main]]
+  name = "Nginx"
+  pre = "network-wired-solid"
+  parent = "知识库"
+  pageRef = "docs/nginx"
+  weight = 24
+
+[[main]]
   name = "实用工具"
   pre = "substack"
   parent = "知识库"

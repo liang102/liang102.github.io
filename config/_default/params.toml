@@ -60,7 +60,7 @@ defaultFeaturedImage = "img/sedbjt.png" # used as default for featured images in
   # 是否在主页显示最近文章
   showRecent = true
   # 最近文章显示多少篇
-  showRecentItems = 8
+  showRecentItems = 9
   # 是否显示更多链接
   showMoreLink = true
   # 最近文章链接后的目录

@@ -9,9 +9,7 @@ Comments:
 showReadingTime: false
 showPagination: false
 showRelatedContent: false
-showAuthor: false
-authors:
- - "小橘子Single"
+weight: 2
 ---
 
 {{< talk >}}

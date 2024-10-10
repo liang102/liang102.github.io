@@ -2,6 +2,7 @@
 title: "nginx-reload原理"
 date: "2022-03-01"
 externalUrl: ""
+tags: ["Nginx"]
 summary: "记录nginx reload的过程"
 showReadingTime: false
 ---
