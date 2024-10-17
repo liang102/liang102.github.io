@@ -17,42 +17,42 @@
   weight = 10
 
 [[main]]
-  name = "知识库"
+  name = "记忆库"
   pre = "book-open"
   weight = 20
 
 [[main]]
   name = "主题快速上手"
   pre = "fish-fins-solid"
-  parent = "知识库"
+  parent = "记忆库"
   pageRef = "docs/theme"
   weight = 21
 
 [[main]]
   name = "云计算"
   pre = "linux"
-  parent = "知识库"
+  parent = "记忆库"
   pageRef = "docs/linux"
   weight = 22
 
 [[main]]
   name = "CSS"
   pre = "css3-alt"
-  parent = "知识库"
+  parent = "记忆库"
   pageRef = "docs/css"
   weight = 23
 
 [[main]]
   name = "Nginx"
   pre = "network-wired-solid"
-  parent = "知识库"
+  parent = "记忆库"
   pageRef = "docs/nginx"
   weight = 24
 
 [[main]]
   name = "实用工具"
   pre = "substack"
-  parent = "知识库"
+  parent = "记忆库"
   pageRef = "docs/links"
   weight = 24
 
